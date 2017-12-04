@@ -1,0 +1,555 @@
+doctype html
+html.no-js(lang='en')
+    // <![endif]
+    head
+        // meta charec set
+        meta(charset='utf-8')
+        // Always force latest IE rendering engine or request Chrome Frame
+        meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        // Page Title
+        title Themefisher.Free Bootstrap3 based HTML5 Templates
+        // Meta Description
+        meta(name='description', content='Blue One Page Creative HTML5 Template')
+        meta(name='keywords', content='one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation')
+        meta(name='author', content='Muhammad Morshed')
+        // Mobile Specific Meta
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        // Google Font
+        link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800', rel='stylesheet', type='text/css')
+        //
+          CSS
+          ==================================================
+        // Fontawesome Icon font
+        link(rel='stylesheet', href='css/font-awesome.min.css')
+        // Twitter Bootstrap css
+        link(rel='stylesheet', href='css/bootstrap.min.css')
+        // jquery.fancybox
+        link(rel='stylesheet', href='css/jquery.fancybox.css')
+        // animate
+        link(rel='stylesheet', href='css/animate.css')
+        // Main Stylesheet
+        link(rel='stylesheet', href='css/main.css')
+        // media-queries
+        link(rel='stylesheet', href='css/media-queries.css')
+        link(rel='stylesheet', href='css/style.css')
+        // Modernizer Script for old Browsers
+        script(src='js/modernizr-2.6.2.min.js')
+
+    body#body
+        // preloader
+        #preloader
+            img(src='img/preloader.gif', alt='Preloader')
+        // end preloader
+        //
+          Fixed Navigation
+          ====================================
+        header#navigation.navbar-fixed-top.navbar
+            .container
+                .navbar-header
+                    // responsive nav button
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                        span.sr-only Toggle navigation
+                        i.fa.fa-bars.fa-2x
+                    // /responsive nav button
+                    // logo
+                    a.navbar-brand(href='#body')
+                        h1#logo
+                            img(src='img/logo1.png', alt='Magic Paving')
+                    // /logo
+                // main nav
+                nav.collapse.navbar-collapse.navbar-right(role='navigation')
+                    ul#nav.nav.navbar-nav
+                        li.current
+                            a(style="font-size: 20px",href='#body') Home
+                        li
+                            a(style="font-size: 20px",href='#features') Services
+                        li
+                            a(style="font-size: 20px",href='#works') Gallery
+                        li
+                            a(style="font-size: 20px",href='#aboutus') About Us
+                        li
+                            a(style="font-size: 20px",href='#contact') Contact
+                // /main nav
+        //
+          End Fixed Navigation
+          ====================================
+        //
+          Home Slider
+          ====================================
+        section#slider
+            #carousel-example-generic.carousel.slide(data-ride='carousel')
+                // Indicators bullet
+                ol.carousel-indicators
+                    li.active(data-target='#carousel-example-generic', data-slide-to='0')
+                    li(data-target='#carousel-example-generic', data-slide-to='1')
+                // End Indicators bullet
+                // Wrapper for slides
+                .carousel-inner(role='listbox')
+                    // single slide
+                    .item.active(style='background-image: url(img/IMG_2821.jpg);')
+                        .carousel-caption
+                            h2.wow.bounceInDown.animated(data-wow-duration='70ms', data-wow-delay='50ms')
+                                | Magic
+                                span  Paving
+                                |!
+                            h3.wow.slideInLeft.animated(data-wow-duration='10ms')
+                                span.color Quality Workmanship Guaranteed.
+                            p.wow.slideInRight.animated(data-wow-duration='10ms') We are a team of professionals
+                            ul.social-links.text-center
+                                li
+                                    a(href='')
+                                        i.fa.fa-twitter.fa-lg
+                                li
+                                    a(href='')
+                                        i.fa.fa-facebook.fa-lg
+                                li
+                                    a(href='')
+                                        i.fa.fa-google-plus.fa-lg
+                                li
+                                    a(href='')
+                                        i.fa.fa-dribbble.fa-lg
+                    // end single slide
+                    // single slide
+                    .item(style='background-image: url(img/IMG_2412.jpg);')
+                        .carousel-caption
+                            h2.wow.bounceInDown.animated(data-wow-duration='50ms', data-wow-delay='50ms')
+                                | Meet
+                                span  Magic Paving
+                                | !
+                            h3.wow.slideInLeft.animated(data-wow-duration='50ms')
+                                span.color For Free Estimate
+                                |  Dial 647-608-7402.
+                            p.wow.slideInRight.animated(data-wow-duration='50ms') Quality Workmanship Guaranteed
+
+                            ul.social-links.text-center
+                                li
+                                    a(href='')
+                                        i.fa.fa-twitter.fa-lg
+                                li
+                                    a(href='')
+                                        i.fa.fa-facebook.fa-lg
+                                li
+                                    a(href='')
+                                        i.fa.fa-google-plus.fa-lg
+                                li
+                                    a(href='')
+                                        i.fa.fa-dribbble.fa-lg
+                    // end single slide
+                // End Wrapper for slides
+        //
+          End Home SliderEnd
+          ====================================
+        //
+          Features
+          ====================================
+        section#features.features
+            .container
+                .row
+                    .sec-title.text-center.mb50.wow.bounceInDown.animated(data-wow-duration='500ms')
+                        h2 Services
+                        .devider
+                            i.fa.fa-heart-o.fa-lg
+                    // service item
+                    .col-md-4.wow.fadeInLeft(data-wow-duration='500ms')
+                        .service-item
+                            .service-icon
+                                i.fa.fa-github.fa-2x
+                            .service-desc
+                                h3 Sealing And Repairs
+                                p
+                    // end service item
+                    // service item
+                    .col-md-4.wow.fadeInUp(data-wow-duration='500ms', data-wow-delay='500ms')
+                        .service-item
+                            .service-icon
+                                i.fa.fa-pencil.fa-2x
+                            .service-desc
+                                h3 Reconstruction Of Asphalt Driveways
+                                p
+                    // end service item
+                    // service item
+                    .col-md-4.wow.fadeInRight(data-wow-duration='500ms', data-wow-delay='900ms')
+                        .service-item
+                            .service-icon
+                                i.fa.fa-bullhorn.fa-2x
+                            .service-desc
+                                h3 Brick Interlocking And Repairs
+                                p
+                     // end service item
+                    // service item
+                    .col-md-4.wow.fadeInLeft(data-wow-duration='500ms')
+                        .service-item
+                            .service-icon
+                                i.fa.fa-github.fa-2x
+                            .service-desc
+                                h3 CrystalSealing And Restoration Of Stones
+                                p
+                                // end service item
+                                // service item
+                    .col-md-4.wow.fadeInUp(data-wow-duration='500ms', data-wow-delay='500ms')
+                        .service-item
+                            .service-icon
+                                i.fa.fa-pencil.fa-2x
+                            .service-desc
+                                h3 Weed Free System
+                                p
+                                    // end service item
+                                    // service item
+                    .col-md-4.wow.fadeInRight(data-wow-duration='500ms', data-wow-delay='900ms')
+                        .service-item
+                            .service-icon
+                                i.fa.fa-bullhorn.fa-2x
+                            .service-desc
+                                h3 Concrete And General Construction Repairs
+                                p
+                    .col-md-4.wow.fadeInRight(data-wow-duration='500ms', data-wow-delay='900ms')
+                        .service-item
+                            .service-icon
+                                i.fa.fa-github.fa-2x
+                            .service-desc
+                                h3 Stamped and stencil Patterns Concrete
+                                p
+                    .col-md-4.wow.fadeInUp(data-wow-duration='500ms', data-wow-delay='500ms')
+                        .service-item
+                            .service-icon
+                                i.fa.fa-pencil.fa-2x
+                            .service-desc
+                                h3 Specializing in : Stamped & Stencil Patterns Concrete
+                                p
+
+                    // end service item
+                    // service item
+
+        //
+          End Features
+          ====================================
+        //
+          Our Works
+          ====================================
+        section#works.works.clearfix
+            .container
+                .row
+                    .sec-title.text-center
+                        h2 Gallery
+                        .devider
+                            i.fa.fa-heart-o.fa-lg
+                    .sec-sub-title.text-center
+                        p
+                            | Snap Images underneath to see our Quality Work delivered
+                    .work-filter.wow.fadeInRight.animated(data-wow-duration='500ms')
+                        ul.text-center
+                            li
+                                //a.active.filter(href='javascript:;', data-filter='all')
+                            li
+                                //a.filter(href='javascript:;', data-filter='.branding') Drive Way
+                            li
+                               // a.filter(href='javascript:;', data-filter='') All
+                            li
+                                //a.filter(href='javascript:;', data-filter='.logo-design') logo design
+                            li
+                                //a.filter(href='javascript:;', data-filter='.photography') photography
+            .project-wrapper
+                figure.mix.work-item.branding
+                    img(src='img/works/IMG_2474.jpg', alt='')
+                    figcaption.overlay
+                        a.fancybox(rel='works', title='Write Your Image Caption Here', href='img/works/IMG_2478.jpg')
+                            i.fa.fa-eye.fa-lg
+                        h4 Click to Open
+                        p After our team work
+                figure.mix.work-item.web
+                    img(src='img/works/IMG_2379.jpg', alt='')
+                    figcaption.overlay
+                        a.fancybox(rel='works', title='Write Your Image Caption Here', href='img/works/IMG_2387.jpg')
+                            i.fa.fa-eye.fa-lg
+                        h4 Click to Open
+                        p After our team work
+                figure.mix.work-item.logo-design
+                    img(src='img/works/IMG_2368.jpg', alt='')
+                    figcaption.overlay
+                        a.fancybox(rel='works', title='Write Your Image Caption Here', href='img/works/IMG_2364.jpg')
+                            i.fa.fa-eye.fa-lg
+                        h4 Click to Open
+                        p After our team work
+                figure.mix.work-item.photography
+                    img(src='img/works/IMG_2378.jpg', alt='')
+                    figcaption.overlay
+                        a.fancybox(rel='works', title='Write Your Image Caption Here', href='img/works/IMG_2388.jpg')
+                            i.fa.fa-eye.fa-lg
+                        h4 Click to Open
+                        p After our team work
+                figure.mix.work-item.branding
+                    img(src='img/works/IMG_2480.jpg', alt='')
+                    figcaption.overlay
+                        a.fancybox(rel='works', title='Write Your Image Caption Here', href='img/works/IMG_2481.jpg')
+                            i.fa.fa-eye.fa-lg
+                        h4 Click to Open
+                        p After our team work
+                figure.mix.work-item.photography
+                    img(src='img/works/IMG_2470.jpg', alt='')
+                    figcaption.overlay
+                        a.fancybox(rel='works', title='Write Your Image Caption Here', href='img/works/IMG_2412.jpg')
+                            i.fa.fa-eye.fa-lg
+                        h4 Click to Open
+                        p After our team work
+                figure.mix.work-item.photography
+                    img(src='img/works/IMG_2842.jpg', alt='')
+                    figcaption.overlay
+                        a.fancybox(rel='works', title='Write Your Image Caption Here', href='img/works/IMG_2854.jpg')
+                            i.fa.fa-eye.fa-lg
+                        h4 Click to Open
+                        p After our team work
+        //
+          End Our Works
+          ====================================
+
+        //
+          Some fun facts
+          ====================================
+        section#facts.facts
+            .parallax-overlay
+                .container
+                    .row.number-counters
+                        .sec-title.text-center.mb50.wow.rubberBand.animated(data-wow-duration='1000ms')
+                            h2 Some Fun Facts
+                            .devider
+                                i.fa.fa-heart-o.fa-lg
+                        // first count item
+                        .col-md-3.col-sm-6.col-xs-12.text-center.wow.fadeInUp.animated(data-wow-duration='500ms')
+                            .counters-item
+                                i.fa.fa-clock-o.fa-3x
+                                strong(data-to='3200') 0
+                                // Set Your Number here. i,e. data-to="56"
+                                p Hours of Work
+                        .col-md-3.col-sm-6.col-xs-12.text-center.wow.fadeInUp.animated(data-wow-duration='500ms', data-wow-delay='300ms')
+                            .counters-item
+                                i.fa.fa-users.fa-3x
+                                strong(data-to='120') 0
+                                // Set Your Number here. i,e. data-to="56"
+                                p Satisfied Clients
+                        .col-md-3.col-sm-6.col-xs-12.text-center.wow.fadeInUp.animated(data-wow-duration='500ms', data-wow-delay='600ms')
+                            .counters-item
+                                i.fa.fa-rocket.fa-3x
+                                strong(data-to='360') 0
+                                // Set Your Number here. i,e. data-to="56"
+                                p  Works Delivered
+                        // end first count item
+         //
+          End Some fun facts
+          ====================================
+    section#aboutus.aboutus
+        .container
+            .row.mb50
+                .sec-title.text-center.mb50.wow.fadeInDown.animated(data-wow-duration='500ms')
+                    h2 About Us
+                    .devider
+                        i.fa.fa-heart-o.fa-lg
+                .sec-sub-title.text-center.wow.rubberBand.animated(data-wow-duration='1000ms')
+                    p('class=text-centre')
+                        |        Having Government Accreditation, has permitted Magic Paving Products to be utilised by numerous Architects and Council offices.
+                        |        Extensive variety of tasks (counting auto parks, carports, porches, galleries, rooftop terraces,swimming pool encompasses,
+                        |        Person on foot regions and road works) have picked up from this.Heavy Traffic zones and prime areas in high avenues, shopping centres,
+                        |        drive-through's and walk ways have all profited from theStylish excellence,hard wearing and low upkeep our items give.
+                        |        Magic Paving as an organisation have been effectively exchanging since 2001, and have been engaged with numerous lofty undertakings in
+                        |        the Canada and UK.
+                // contact address
+                .col-lg-3.col-md-3.col-sm-4.col-xs-12.wow.fadeInLeft.animated(data-wow-duration='500ms')
+                    .contact-address
+                        h3
+                        p
+                        p
+
+
+
+        //
+          Contact Us
+          ====================================
+
+        section#contact.contact
+            .container
+                .row.mb50
+                    .sec-title.text-center.mb50.wow.fadeInDown.animated(data-wow-duration='500ms')
+                        h2 Let’s Discuss
+                        .devider
+                            i.fa.fa-heart-o.fa-lg
+                    .sec-sub-title.text-center.wow.rubberBand.animated(data-wow-duration='1000ms')
+                        p
+                            | Send an Email with your phone number, Our team will get back to you soon.
+                    // contact address
+                    .col-lg-3.col-md-3.col-sm-4.col-xs-12.wow.fadeInLeft.animated(data-wow-duration='500ms')
+                        .contact-address
+                            h3
+                            p
+                            p
+                    // end contact address
+                    // contact form
+                    .col-lg-8.col-md-8.col-sm-7.col-xs-12.wow.fadeInDown.animated(data-wow-duration='500ms', data-wow-delay='300ms')
+                        .contact-form
+                            h3 Say hello!
+                            form#contact-form(action='/contact', method='POST')
+                                .input-group.name-email
+                                    .input-field
+                                        input#name.form-control(type='text', name='name', placeholder='Name')
+                                    .input-field
+                                        input#email.form-control(type='email', name='email', placeholder='Email')
+                                .input-group
+                                    textarea#message.form-control(name='message', placeholder='Message')
+                                .input-group
+                                    input#form-submit.pull-right(type='submit', value='Send message')
+                    // end contact form
+                    // footer social links
+                    .col-lg-1.col-md-1.col-sm-1.col-xs-12.wow.fadeInRight.animated(data-wow-duration='500ms', data-wow-delay='600ms')
+                        ul.footer-social
+                            li
+                                a(href='https://www.behance.net/Themefisher')
+                                    i.fa.fa-behance.fa-2x
+                            li
+                                a(href='https://www.twitter.com/Themefisher')
+                                    i.fa.fa-twitter.fa-2x
+                            li
+                                a(href='https://dribbble.com/themefisher')
+                                    i.fa.fa-dribbble.fa-2x
+                            li
+                                a(href='https://www.facebook.com/Themefisher')
+                                    i.fa.fa-facebook.fa-2x
+                    // end footer social links
+            // Google map
+            #map_canvas.wow.bounceInDown.animated(data-wow-duration='500ms')
+            // End Google map
+        //
+          End Contact Us
+          ====================================
+
+
+        footer#footer.footer
+            .container
+                    .col-md-1.col-sm-1.col-xs-1.wow.fadeInUp.animated(data-wow-duration='500ms')
+                        .footer-single
+                            img(src='img/footer-logo.png', alt='')
+                            h2(style='color:black') "Quality Workmanship Guarenteed"
+                    .col-md-1.col-sm-2.col-xs-1.wow.fadeInUp.animated(data-wow-duration='500ms', data-wow-delay='300ms')
+                    .col-md-12
+                        p.copyright.text-center
+                            | Copyright © 2017
+                            a(href='http://thisndthat.com/') Volanis
+                            | . All rights reserved. Designed & developed by
+                            a(href='http://thisndthat.com/') Volanis
+        a#back-top(href='javascript:void(0);')
+            i.fa.fa-angle-up.fa-3x
+        //
+          Essential jQuery Plugins
+          ==================================================
+        // Main jQuery
+
+        script(type='text/javascript', src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js')
+        script(type='text/javascript',src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.js')
+        script(type='text/javascript', src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js')
+        //script(src='js/jquery-1.11.1.min.js')
+        // Single Page Nav
+        script(src='js/jquery.singlePageNav.min.js')
+        // Twitter Bootstrap
+        script(src='js/bootstrap.min.js')
+        // jquery.fancybox.pack
+        script(src='js/jquery.fancybox.pack.js')
+        // jquery.mixitup.min
+        script(src='js/jquery.mixitup.min.js')
+        // jquery.parallax
+        script(src='js/jquery.parallax-1.1.3.js')
+        // jquery.countTo
+        script(src='js/jquery-countTo.js')
+        // jquery.appear
+        script(src='js/jquery.appear.js')
+        // Contact form validation
+        //script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js')
+        //script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js')
+        //script('https://cdn.jsdelivr.net/jquery.validation/1.17.0/jquery.validate.js')
+        //script(src='http://code.jquery.com/jquery-1.7.1.min.js')
+
+
+        // Google Map
+        script(type='text/javascript', src='http://maps.googleapis.com/maps/api/js?sensor=false')
+        // jquery easing
+        script(src='js/jquery.easing.min.js')
+        // jquery easing
+        script(src='js/wow.min.js')
+        script.
+            var wow = new WOW ({
+                    boxClass:     'wow',      // animated element css class (default is wow)
+                    animateClass: 'animated', // animation css class (default is animated)
+                    offset:       120,          // distance to the element when triggering the animation (default is 0)
+                    mobile:       false,       // trigger animations on mobile devices (default is true)
+                    live:         true        // act on asynchronously loaded content (default is true)
+                }
+            );
+            wow.init();
+
+        // Custom Functions
+        script(src='js/custom.js')
+        script(type='text/javascript').
+            jQuery.validator.addMethod('answercheck', function (value, element) {
+                return this.optional(element) || /^\bcat\b$/.test(value);
+            }, "type the correct answer -_-");
+
+            $(function() {
+                /* ========================================================================= */
+                /*	Contact Form
+                 /* ========================================================================= */
+                $('#contact-form').validate({
+                    rules: {
+                        name: {
+                            required: true,
+                            minlength: 2
+                        },
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        message: {
+                            required: true
+                        }
+                    },
+                    messages: {
+                        name: {
+                            required: "come on, you have a name don't you?",
+                            minlength: "your name must consist of at least 2 characters"
+                        },
+                        email: {
+                            required: "no email, no message"
+                        },
+                        message: {
+                            required: "um...yea, you have to write something to send this form.",
+                            minlength: "thats all? really?"
+                        }
+                    },
+                    submitHandler: function (form) {
+                        //Create variables from the form
+                        var fullname = $('input#name').val();
+                        console.log("the name is:"+fullname);
+                        var emailaddress = $('input#email').val();
+                        var message = $('textarea#message').val();
+                        // Create variables that will be sent in a URL string to mail.php
+                        var dataString = '&fullname=' + fullname + '&emailaddress=' + emailaddress + '&message=' + message;
+                        $(form).ajaxSubmit({
+                            type: "POST",
+                            //data: $(form).serialize(),
+                            url: 'http://localhost:3000',
+                            crossDomain:true,
+                            dataType: "json",
+                            data: JSON.stringify(data),
+                            cache: false,
+                            success: function () {
+                                $('#contact-form :input').attr('disabled', 'disabled');
+                                $('#contact-form').fadeTo("slow", 0.15, function () {
+                                    $(this).find(':input').attr('disabled', 'disabled');
+                                    $(this).find('label').css('cursor', 'default');
+                                    $('#success').fadeIn();
+                                });
+                            },
+                            error: function () {
+                                $('#contact-form').fadeTo("slow", 0.15, function () {
+                                    $('#error').fadeIn();
+                                });
+                            }
+                        });
+                    }
+                });
+            });
